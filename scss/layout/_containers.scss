@@ -1,0 +1,126 @@
+/* containers */
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+
+  @media #{$brk-narrow} {
+    max-width: 500px;
+  }
+  @media #{$brk-medium} {
+      max-width: 768px;
+  }
+  @media #{$brk-large} {
+      max-width: 1024px;
+  }
+}
+/* Hero */
+
+.hero {
+  img {
+  width: 100%;
+  margin: 5% auto;
+
+  @media #{$brk-medium} {
+    padding: 2em 0 2em 2em;
+    margin: 0;
+    }
+  }
+  p {
+    padding-bottom: 2em;
+
+    @media #{$brk-medium} {
+      @include text(1.2em, inline-block);
+      margin: 0;
+      line-height: 1.5;
+      width: 50%;
+      padding: 4em 0 2em 0;
+    }
+  }
+}
+
+h2 {
+  @extend %center;
+}
+
+/* Contact */
+
+.contact-con {
+    @extend %center;
+
+  p {
+    @extend %center;
+
+    @media #{$brk-medium} {
+      max-width: 60%;
+    }
+  }
+}
+
+#contact-nav {
+  margin-top: 2.0em;
+}
+
+@media #{$brk-medium} {
+  p.skill-script {
+    max-width: 60%;
+  }
+}
+
+.phone {
+  margin-top: 1em;
+
+  li {
+    display: inline;
+    margin: auto;
+    padding-left: 1em;
+  }
+}
+
+.mail {
+  margin-top: 1em;
+
+  li {
+    display: inline;
+    margin: auto;
+    padding-left: 1em;
+  }
+}
+
+/* Skills */
+
+p.skill-script {
+  @extend %center;
+}
+
+ul.skills {
+  padding: 0;
+  @extend %center;
+}
+
+.skills li {
+  border-radius: 6px;
+  @extend %inline;
+  background: #{$fgreen};
+  color: #{$white};
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #{$steelblue};
+}
+
+.skills {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  padding: 20px 40px 40px;
+}
+
+.skillsandcontact {
+  padding: 50px 0 40px 0;
+}
+
+#skills-nav {
+  margin-top: 0;
+}

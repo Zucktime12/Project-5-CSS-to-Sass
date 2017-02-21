@@ -1,0 +1,53 @@
+/* Portfolio Section */
+
+ul#portfolio {
+  @extend %reset;
+}
+
+#portfolio {
+  img {
+  max-width: 75%;
+  margin: 5% 12.5%;
+  @extend %center;
+  }
+  h3 {
+  @extend %center;
+  color: #{$black};
+  }
+  p {
+  @extend %center;
+  max-width: 90%;
+  margin: 0 5%;
+
+  @media #{$brk-medium} {
+    line-height: 1.5;
+    }
+  @media #{$brk-large} {
+    line-height: 1.5;
+    }
+  }
+
+  li{
+    @media #{$brk-medium} {
+      display: inline-block;
+      max-width: 50%;
+      font-size: initial;
+      vertical-align: top;
+    }
+
+    @media #{$brk-large} {
+      display: inline-block;
+      max-width: 33.3333%;
+      font-size: initial;
+      vertical-align: top;
+    }
+  }
+
+  @media #{$brk-medium} {
+    font-size: 0;
+  }
+
+  @media #{$brk-large} {
+    font-size: 0;
+  }
+}

@@ -1,0 +1,71 @@
+/* Navigation */
+header {
+  padding: 20px 0;
+}
+
+.name {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+
+@media (min-width: 1024px) {
+  .name {
+    display: inline-block;
+  }
+}
+
+ul.nav {
+  margin: 0;
+  padding: 0;
+  @extend %center;
+}
+
+@media (min-width: 1024px) {
+  ul.nav {
+    text-align: right;
+    display: inline-block;
+    float: right;
+  }
+}
+
+.nav li {
+  text-align: center;
+  background: #{$white};
+  margin: 6px 0;
+
+  @media #{$brk-medium} {
+    display: inline-block;
+    background-color: inherit;
+    margin: 0;
+  }
+
+  @media #{$brk-large} {
+      margin: 0;
+  }
+}
+
+@media #{$brk-medium} {
+  .profile-image {
+    max-width: 50%;
+    float: right;
+  }
+}
+
+.nav a {
+  @include text(.95em, block, $color: #{$steelblue});
+  text-transform: uppercase;
+  padding: 15px;
+
+  @media #{$brk-medium} {
+    color: #{$black};
+  }
+}
+
+.nav a:hover {
+  color: #{$turq};
+}
+
+.nav a:active {
+  color: #{$lsb};
+}

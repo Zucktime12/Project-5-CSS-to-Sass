@@ -1,0 +1,63 @@
+/* General */
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  @extend %center;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #{$offwhite};
+
+  @media #{$brk-medium} {
+    background: #{$cream};
+  }
+}
+
+@media #{$brk-medium} {
+  main {
+    background-color: #{$white};
+    padding-bottom: 3em;
+    padding-top: 3em;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-family: 'Abel', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #{$steelblue};
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  @extend %reset;
+}
+
+section p {
+  max-width: 90%;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,7 @@
+//text mixin
+
+@mixin text($f-size, $display: null, $color: null) {
+  font-size: $f-size;
+  display: $display;
+  color: $color;
+}
