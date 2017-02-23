@@ -9,7 +9,7 @@ header {
   padding: 5px 0;
 }
 
-@media (min-width: 1024px) {
+@media #{$brk-large} {
   .name {
     display: inline-block;
   }
@@ -21,7 +21,7 @@ ul.nav {
   @extend %center;
 }
 
-@media (min-width: 1024px) {
+@media #{$brk-large} {
   ul.nav {
     text-align: right;
     display: inline-block;

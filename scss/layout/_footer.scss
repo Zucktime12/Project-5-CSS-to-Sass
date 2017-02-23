@@ -22,7 +22,7 @@ footer li {
   display: block;
 }
 
-@media (min-width: 768px) {
+@media #{$brk-medium} {
   .footer-name {
     display: inline-block;
   }
